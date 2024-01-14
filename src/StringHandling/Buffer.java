@@ -6,7 +6,7 @@ public class Buffer {
         System.out.println(sb.capacity() + " " + sb.length());
 
         // returns (-1,0,1) according to lexicographical order of this to args, before =
-        // 1, same = 0, after = -1
+        // 1 pos, same = 0, after = -1 neg
         System.out.println(sb.compareTo(new StringBuffer("Buffering")));
 
         // to reduce Buffer size
