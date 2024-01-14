@@ -1,9 +1,12 @@
-package Collections;
+package Collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.Vector;
+import java.util.Stack;
+import java.util.List;
 
 public class Lists {
     public static void main(String[] args) {
@@ -73,5 +76,23 @@ public class Lists {
             }
         });
         System.out.println(ll);
+
+        // Vector
+
+        // works as buffer
+        Vector<Integer> v = new Vector<>();
+        System.out.println(v.capacity() + " " + v.size());
+
+        // Stack
+
+        // works as Vector + ArrayList
+        Stack<Integer> s = new Stack<>();
+
+        // parent List interface
+
+        // can only access methods of List interface
+        List<Integer> linkl = ll;
+        List<Integer> arrl = ll;
+
     }
 }
