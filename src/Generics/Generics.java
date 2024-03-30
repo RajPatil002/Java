@@ -1,6 +1,6 @@
 package Generics;
 
-public class Generics<T> {
+public class Generics<T extends Number> {
     T[] g = (T[]) new Object[5];
 
     Generics(T... t) {

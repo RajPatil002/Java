@@ -12,6 +12,7 @@ public class Lists {
     public static void main(String[] args) {
 
         // ArrayList
+        // new ArrayList<>(List.of(20,34,231,43)); another way to initialize
         ArrayList<Integer> al = new ArrayList<>() {
             @Override
             public boolean add(Integer e) {
@@ -24,6 +25,7 @@ public class Lists {
                 add(10);
                 super.add(10);
                 super.add(300);
+                // addAll((ArrayList) clone());
             }
         };
         System.out.println(al);
@@ -46,6 +48,7 @@ public class Lists {
 
         // LinkedList
         // Contains all method of ArrayList + some new
+        // new LinkedList<>(List.of(20,34,231,43));
         LinkedList<Integer> ll = new LinkedList<>() {
 
             // Anonymous Subclass
